@@ -37,8 +37,7 @@ pipeline {
  echo 'Creating application package'
  bat '''
  if exist railway-reservation.zip del railway-reservation.zip
- powershell -NoProfile -Command "Compress-Archive -Path 
-index.html,style.css,script.js -DestinationPath railway-reservation.zip"
+ powershell -NoProfile -Command "Compress-Archive -Path index.html,style.css,script.js -DestinationPath railway-reservation.zip"
  '''
  }
  }
